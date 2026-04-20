@@ -13,8 +13,8 @@ What I built:
 - Set up static website endpoint with index.html
 - Documented cloud architecture for portfolio
 
-Architecture Diagram:
-   ![S3 Static Website Architecture](s3-diagram.png)
+   **Architecture Diagram:**  
+   [📄 View S3 Static Website Architecture](s3-diagram.pdf)
 
 Key Learnings:
 - S3 buckets can host static websites without EC2 servers
