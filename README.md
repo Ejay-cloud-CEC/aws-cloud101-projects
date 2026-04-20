@@ -14,7 +14,7 @@ What I built:
 - Documented cloud architecture for portfolio
 
    **Architecture Diagram:**  
-![S3 Static Website Architecture](s3-diagram.jpg)
+[S3 Static Website Architecture](s3-diagram.jpg)
 
 Key Learnings:
 - S3 buckets can host static websites without EC2 servers
