@@ -21,5 +21,22 @@ Key Learnings:
 - Public access requires explicit bucket policy configuration
 - Architecture diagrams communicate cloud solutions effectively
 
----
-Next: EC2 + VPC Architecture
+
+AWS EC2 Concepts | April 21, 2026
+- Created EC2 architecture diagram showing SSH connection flow
+- Documented 4-step process: Launch → Security Group → Key Pair → SSH
+- Understood EC2 as virtual server with EBS storage
+- Learned Security Group as firewall controlling Port 22 access
+
+**Architecture Diagram:**
+![EC2 Architecture](IMG_20260421_140521.jpg)
+[Download PDF Version](EC2%20Architecture.pdf)
+
+Key Learnings:
+- EC2 is AWS virtual server in the cloud
+- Security Groups act as virtual firewall for EC2
+- Key Pair (.pem file) enables secure SSH access
+- EBS provides persistent block storage for EC2
+
+AWS Educate Cloud 101 - Module 4
+Ejay Ardimer | Cebu Eastern College
