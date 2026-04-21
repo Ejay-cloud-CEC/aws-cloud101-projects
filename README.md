@@ -42,14 +42,13 @@ Ejay Ardimer | Cebu Eastern College
 ---
 ---
 IT: Linux Basics - chmod | April 21,2026
-   
-   **Commands Learned:**
-   - `touch practice-key.pem` → Created dummy key file
-   - `ls -l` → Checked file permissions  
-   - `chmod 400 practice-key.pem` → Set to read-only for owner
-   
-   **Key Learning:** AWS requires .pem file to be 400 permission for SSH security.
-   
-   **Proof:** 
-   Before: -rw------- (600)
-   After: -r-------- (400)
+
+**Commands Practiced:**
+- `touch practice-key.pem` → Created dummy key file
+- `chmod 400 practice-key.pem` → Set to read-only permission
+- Result: `-r--------` = 400, AWS SSH requirement
+
+**Key Learning:** AWS blocks SSH if .pem file is not 400 permission for security.
+
+**Files:**
+- [Linux Basics PDF](./Linux%20basics.pdf)
