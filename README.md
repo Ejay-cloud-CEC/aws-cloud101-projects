@@ -20,8 +20,8 @@ Key Learnings:
 - S3 buckets can host static websites without EC2 servers
 - Public access requires explicit bucket policy configuration
 - Architecture diagrams communicate cloud solutions effectively
-
-
+---
+---
 AWS EC2 Concepts | April 21, 2026
 - Created EC2 architecture diagram showing SSH connection flow
 - Documented 4-step process: Launch → Security Group → Key Pair → SSH
@@ -29,8 +29,7 @@ AWS EC2 Concepts | April 21, 2026
 - Learned Security Group as firewall controlling Port 22 access
 
 **Architecture Diagram:**
-![EC2 Architecture](IMG_20260421_140521.jpg)
-[Download PDF Version](EC2%20Architecture.pdf)
+![EC2 Architecture](EC2%20Architecture.pdf)
 
 Key Learnings:
 - EC2 is AWS virtual server in the cloud
