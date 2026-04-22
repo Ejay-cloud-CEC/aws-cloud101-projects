@@ -52,3 +52,36 @@ IT: Linux Basics - chmod | April 21,2026
 
 **Files:**
 - [Linux Basics PDF](./Linux%20basics.pdf)
+  ---
+  ---
+  # AWS RDS MySQL Architecture
+### AWS Educate Cloud 101 - Module 4 
+### April 23, 2026
+
+**Architecture diagram for Amazon RDS MySQL deployment.**  
+**Planning only. No resources launched to avoid AWS charges.**
+
+### Diagram Preview
+[View RDS Architecture PDF](./AWS%20RDS%20MySQL%20Architecture%20.pdf)
+
+### Key Components
+1. **User/Termux** - Client connecting to database
+2. **Security Group** - Firewall allowing Port 3306
+3. **RDS Instance** - Managed database service
+4. **MySQL Database** - cloud101db
+
+### Launch Steps Summary
+1. Create RDS MySQL 8.0.35 - Free Tier db.t3.micro
+2. Configure: cloud101db, admin, Cloud101!
+3. Security: Public access Yes, Port 3306 open
+4. Connect: `mysql -h <endpoint> -u admin -p`
+5. Delete after testing to avoid charges
+
+### Key Learnings
+- **RDS** = Managed service. AWS handles backup, patching, scaling
+- **Security Group** = Virtual firewall. Must open Port 3306 for remote access
+- **Cost Control** = Always delete resources after demo
+
+---
+**Ejay Ardimer | Cebu Eastern College**  
+**#AWSEducate #Cloud101 #RDS #MySQL**
