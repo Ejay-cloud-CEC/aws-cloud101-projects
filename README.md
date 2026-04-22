@@ -54,6 +54,27 @@ IT: Linux Basics - chmod | April 21,2026
 - [Linux Basics PDF](./Linux%20basics.pdf)
   ---
   ---
+  ###  AWS VPC Architecture  
+[View Architecture PDF](./VPC-Architecture-April22.pdf)
+
+**Flow:** User → Internet Gateway → VPC 10.0.0.0/16 → Public Subnet 10.0.1.0/24
+
+**8 Steps to Launch:**
+1. Open AWS Console → Search VPC → Click Create VPC
+2. Choose VPC Settings: IPv4 CIDR block 10.0.0.0/16
+3. Select Tenancy: Default
+4. Create Subnets: Public + Private
+5. Create & Attach Internet Gateway
+6. Configure Route Tables
+7. Configure Security Groups
+8. Launch EC2 in Public Subnet
+
+**Key Learnings:**
+- VPC = Your private cloud network with 65,536 IPs (/16)
+- Public Subnet 10.0.1.0/24 needs Internet Gateway for internet
+- Private Subnet for databases, no direct internet access
+- Route Table controls traffic: 0.0.0.0/0 → Internet Gateway
+- Always delete VPC + IGW after demo to avoid charges
   # AWS RDS MySQL Architecture
 ### AWS Educate Cloud 101 - Module 4 
 ### April 23, 2026
