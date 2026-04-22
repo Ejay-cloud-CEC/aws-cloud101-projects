@@ -1,9 +1,9 @@
-AWS Cloud 101 Projects
+# AWS Cloud 101 Projects
 My hands-on labs from AWS Educate at Cebu Eastern College 🚀
 
 Module 4: AWS Core Services
 
-✅ S3 Static Website Hosting
+# ✅ S3 Static Website Hosting
 Date: April 20, 2026  
 Skills: Amazon S3, Cloud Architecture, GitHub, Technical Documentation
 
@@ -22,7 +22,7 @@ Key Learnings:
 - Architecture diagrams communicate cloud solutions effectively
 ---
 ---
-AWS EC2 Concepts | April 21, 2026
+# AWS EC2 Concepts | April 21, 2026
 - Created EC2 architecture diagram showing SSH connection flow
 - Documented 4-step process: Launch → Security Group → Key Pair → SSH
 - Understood EC2 as virtual server with EBS storage
@@ -36,12 +36,12 @@ Key Learnings:
 - Security Groups act as virtual firewall for EC2
 - Key Pair (.pem file) enables secure SSH access
 - EBS provides persistent block storage for EC2
-
+- 
 AWS Educate Cloud 101 - Module 4
 Ejay Ardimer | Cebu Eastern College
 ---
 ---
-IT: Linux Basics - chmod | April 21,2026
+# IT: Linux Basics - chmod | April 21,2026
 
 **Commands Practiced:**
 - `touch practice-key.pem` → Created dummy key file
@@ -53,28 +53,40 @@ IT: Linux Basics - chmod | April 21,2026
 **Files:**
 - [Linux Basics PDF](./Linux%20basics.pdf)
   ---
-  ---
-  ###  AWS VPC Architecture  
-[View Architecture PDF](./VPC-Architecture-April22.pdf)
+  --- 
+# AWS VPC Architecture 
+### April 22,2026
 
-**Flow:** User → Internet Gateway → VPC 10.0.0.0/16 → Public Subnet 10.0.1.0/24
+### Diagram Preview
+[View VPC Architecture PDF](./AWS%20VPC%20Architecture%20.pdf)
 
-**8 Steps to Launch:**
-1. Open AWS Console → Search VPC → Click Create VPC
-2. Choose VPC Settings: IPv4 CIDR block 10.0.0.0/16
-3. Select Tenancy: Default
-4. Create Subnets: Public + Private
-5. Create & Attach Internet Gateway
-6. Configure Route Tables
-7. Configure Security Groups
-8. Launch EC2 in Public Subnet
+### Key Components
+1. **User** - Client accessing AWS resources
+2. **Internet Gateway** - Door to internet for VPC
+3. **VPC 10.0.0.0/16** - Private cloud network with 65,536 IPs
+4. **Public Subnet 10.0.1.0/24** - Subnet with internet access
 
-**Key Learnings:**
-- VPC = Your private cloud network with 65,536 IPs (/16)
-- Public Subnet 10.0.1.0/24 needs Internet Gateway for internet
-- Private Subnet for databases, no direct internet access
-- Route Table controls traffic: 0.0.0.0/0 → Internet Gateway
-- Always delete VPC + IGW after demo to avoid charges
+### Launch Steps Summary
+1. Create VPC with IPv4 CIDR 10.0.0.0/16 - Tenancy: Default
+2. Create Subnets: Public 10.0.1.0/24 + Private 10.0.2.0/24
+3. Create & Attach Internet Gateway to VPC
+4. Configure Route Tables: 0.0.0.0/0 → Internet Gateway
+5. Configure Security Groups: Allow Port 80, 22
+6. Launch EC2 in Public Subnet with Auto-assign Public IP
+7. Delete VPC + IGW after testing to avoid charges
+
+### Key Learnings
+- **VPC** = Your private cloud network. Isolated from other AWS customers
+- **CIDR** = /16 gives 65,536 IPs. /24 gives 256 IPs per subnet
+- **Internet Gateway** = Required for Public Subnet to access internet
+- **Route Table** = Controls traffic flow. GPS sa network
+- **Cost Control** = VPC is free but IGW + NAT Gateway have charges if left running
+
+---
+**Ejay Ardimer | Cebu Eastern College**  
+**#AWSEducate #Cloud101 #VPC #Networking**
+---
+---
   # AWS RDS MySQL Architecture
 ### AWS Educate Cloud 101 - Module 4 
 ### April 23, 2026
