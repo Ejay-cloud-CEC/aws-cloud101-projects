@@ -1,10 +1,12 @@
-# AWS Cloud 101 Projects
+  # AWS Cloud 101 Projects
 My hands-on labs from AWS Educate at Cebu Eastern College 🚀
 
 Module 4: AWS Core Services
 
-# ✅ S3 Static Website Hosting
-Date: April 20, 2026  
+# S3 Static Website Hosting
+# April 20, 2026  
+### AWS Educate Cloud 101 - Module 4 
+
 Skills: Amazon S3, Cloud Architecture, GitHub, Technical Documentation
 
 What I built:
@@ -22,7 +24,10 @@ Key Learnings:
 - Architecture diagrams communicate cloud solutions effectively
 ---
 ---
-# AWS EC2 Concepts | April 21, 2026
+# AWS EC2 Concepts 
+# April 21, 2026
+### AWS Educate Cloud 101 - Module 4 
+
 - Created EC2 architecture diagram showing SSH connection flow
 - Documented 4-step process: Launch → Security Group → Key Pair → SSH
 - Understood EC2 as virtual server with EBS storage
@@ -36,12 +41,10 @@ Key Learnings:
 - Security Groups act as virtual firewall for EC2
 - Key Pair (.pem file) enables secure SSH access
 - EBS provides persistent block storage for EC2
-- 
-AWS Educate Cloud 101 - Module 4
-Ejay Ardimer | Cebu Eastern College
 ---
 ---
-# IT: Linux Basics - chmod | April 21,2026
+# IT: Linux Basics - chmod 
+# April 21,2026
 
 **Commands Practiced:**
 - `touch practice-key.pem` → Created dummy key file
@@ -56,6 +59,7 @@ Ejay Ardimer | Cebu Eastern College
   --- 
 # AWS VPC Architecture 
 ### April 22,2026
+### AWS Educate Cloud 101 - Module 4 
 
 ### Diagram Preview
 [View VPC Architecture PDF](./AWS%20VPC%20Architecture%20.pdf)
@@ -81,15 +85,11 @@ Ejay Ardimer | Cebu Eastern College
 - **Internet Gateway** = Required for Public Subnet to access internet
 - **Route Table** = Controls traffic flow. GPS sa network
 - **Cost Control** = VPC is free but IGW + NAT Gateway have charges if left running
-
----
-**Ejay Ardimer | Cebu Eastern College**  
-**#AWSEducate #Cloud101 #VPC #Networking**
 ---
 ---
-  # AWS RDS MySQL Architecture
-### AWS Educate Cloud 101 - Module 4 
+# AWS RDS MySQL Architecture 
 ### April 23, 2026
+### AWS Educate Cloud 101 - Module 4 
 
 **Architecture diagram for Amazon RDS MySQL deployment.**  
 **Planning only. No resources launched to avoid AWS charges.**
@@ -116,5 +116,3 @@ Ejay Ardimer | Cebu Eastern College
 - **Cost Control** = Always delete resources after demo
 
 ---
-**Ejay Ardimer | Cebu Eastern College**  
-**#AWSEducate #Cloud101 #RDS #MySQL**
