@@ -116,3 +116,37 @@ Key Learnings:
 - **Cost Control** = Always delete resources after demo
 
 ---
+---
+# SQLBolt 1-18 Complete ✅
+
+Completed all 18 lessons of SQLBolt interactive SQL tutorial. 
+From basic SELECT statements to CREATE TABLE and database design.
+
+**Date Finished:** April 23, 2026  
+**Time Spent:** 1 day intensive study  
+**Status:** 100% Complete  
+
+---
+
+### 🧠 Key Skills Learned
+
+**Querying:** `SELECT`, `WHERE`, `AND/OR`, `LIKE`, `ORDER BY`, `LIMIT`  
+**Joins:** `INNER JOIN`, `LEFT JOIN`, `NULL` handling  
+**Aggregates:** `COUNT()`, `SUM()`, `AVG()`, `GROUP BY`, `HAVING`  
+**CRUD:** `INSERT INTO`, `UPDATE`, `DELETE FROM`  
+**DDL:** `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`  
+
+---
+
+### 📸 Proof of Completion
+
+[View SQLBolt Completion Certificate](./SQLBolt-complete.png.pdf)
+
+*Note: Click link to view PDF proof*
+
+---
+
+### ☁️ AWS Relevance
+
+SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
+
