@@ -149,4 +149,51 @@ From basic SELECT statements to CREATE TABLE and database design.
 ### ☁️ AWS Relevance
 
 SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
+---
+---
+# 🔐 AWS IAM Architecture 
+# Cloud 101 Module 4
+> **Identity and Access Management** |
+# APRIL 24 2026
+[[AWS](https://img.shields.io/badge/AWS-IAM-FF9900?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com/iam/)
+[[Security](https://img.shields.io/badge/Model-Zero%20Trust-DC143C?style=for-the-badge)](./IAM%20ARCHITECTURE%20.pdf)
+[[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)
 
+[📄 View Architecture Diagram PDF](./IAM%20ARCHITECTURE%20.pdf)
+
+---
+
+### ⚡ **Architecture Flow**
+
+**Core Rule:** `Deny by Default` → No policy = No access
+
+---
+
+### 🧩 **Components Breakdown**
+
+| Component | Name Used | Purpose | Best Practice | Boss Analogy |
+| --- | --- | --- | --- | --- |
+| **Root User** | Account Owner | Unlimited access | Billing only + MFA | Tag-iya sa kompanya |
+| **IAM User** | `ejay-dev` | Human identity | 1 person = 1 user | Employee ID badge |
+| **IAM Group** | `Developers` | Team permissions | Attach policy to group | Department |
+| **IAM Role** | `EC2-S3-Role` | Temp AWS service creds | Use for EC2/Lambda | Visitor badge |
+| **Policy** | `GetCloud101Objects` | JSON allow/deny rules | Least privilege only | List sa pwede sudlan |
+| **MFA** | Authenticator App | Second factor auth | Required for admins | Double lock |
+
+---
+
+### 🛠️ **6 Steps to Build**
+
+1. **Create IAM User** → `ejay-dev` with Console + Programmatic access + Force password reset
+2. **Enable MFA** → Google Authenticator for `ejay-dev` and Root User
+3. **Create IAM Group** → `Developers` + Attach `AmazonS3ReadOnlyAccess`
+4. **Write Custom Policy** → `GetCloud101Objects.json` for specific S3 bucket only
+   ```json
+   {
+     "Version": "2012-10-17",
+     "Statement": [{
+       "Effect": "Allow",
+       "Action": "s3:GetObject",
+       "Resource": "arn:aws:s3:::cloud101-bucket/*"
+     }]
+   }
