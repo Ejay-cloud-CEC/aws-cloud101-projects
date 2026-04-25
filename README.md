@@ -163,12 +163,6 @@ SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
 
 ---
 
-### ⚡ **Architecture Flow**
-
-**Core Rule:** `Deny by Default` → No policy = No access
-
----
-
 ### 🧩 **Components Breakdown**
 
 | Component | Name Used | Purpose | Best Practice | Boss Analogy |
