@@ -153,11 +153,6 @@ SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
 ---
 # 🔐 AWS IAM Architecture 
 # Cloud 101 Module 4
-> **Identity and Access Management** |
-# APRIL 24 2026
-[[AWS](https://img.shields.io/badge/AWS-IAM-FF9900?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com/iam/)
-[[Security](https://img.shields.io/badge/Model-Zero%20Trust-DC143C?style=for-the-badge)](./IAM%20ARCHITECTURE%20.pdf)
-[[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)
 
 [📄 View Architecture Diagram PDF](./IAM%20ARCHITECTURE%20.pdf)
 ---
@@ -195,8 +190,6 @@ SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
 # ⚡ AWS Lambda Architecture 
 # Cloud 101
 # April 25 2026
-
-[[AWS](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=aws-lambda)](https://aws.amazon.com/lambda/) [[Serverless](https://img.shields.io/badge/Model-Serverless-00C851?style=for-the-badge)](./AWS-Lambda-Architecture.pdf) [[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)  
 
 [📄 View Architecture Diagram PDF](./AWS%20LAMBDA%20ARCHITECTURE%20.pdf)
 
@@ -238,11 +231,7 @@ def lambda_handler(event, context):
 # Cloud 101 
 # April 25 2026
 
-[[AWS](https://img.shields.io/badge/AWS-CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch)](https://aws.amazon.com/cloudwatch/)
-[[Monitoring](https://img.shields.io/badge/Model-Observability-00C851?style=for-the-badge)](./AWS-CloudWatch-Dashboard.pdf)
-[[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)
-
-[📄 View Dashboard Diagram PDF](./AWS-CloudWatch-Dashboard.pdf)
+[📄 View CloudWatch Dashboard PDF](./Aws%20CloudWatch%20Architecture%20.pdf)
 
 ### 📊 **Observability Flow**
 Lambda Function → CloudWatch Logs → Metric Filter → CloudWatch Alarm → SNS Topic → Email
