@@ -198,7 +198,7 @@ SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
 
 [[AWS](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=aws-lambda)](https://aws.amazon.com/lambda/) [[Serverless](https://img.shields.io/badge/Model-Serverless-00C851?style=for-the-badge)](./AWS-Lambda-Architecture.pdf) [[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)  
 
-[📄 View Architecture Diagram PDF](./AWS-LAMBDA-ARCHITECTURE.pdf)  
+[📄 View Architecture Diagram PDF](./AWS-Lambda-Architecture.pdf)
 
 ### ⚡ **Architecture Flow**  
 Event Source [API Gateway/S3/EventBridge] → Lambda Function [hello-world-lambda] → Execution Role → CloudWatch Logs → Target Service [DynamoDB/S3/SNS]  
