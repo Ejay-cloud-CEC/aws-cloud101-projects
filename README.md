@@ -230,60 +230,8 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
     }
----
----
 
-# AWS CloudWatch 
-# Cloud 101
-# April 25 2026
 
-[[AWS](https://img.shields.io/badge/AWS-CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch)](https://aws.amazon.com/cloudwatch/)
-[[Monitoring](https://img.shields.io/badge/Model-Observability-00C851?style=for-the-badge)](./AWS-CloudWatch-Dashboard.pdf)
-[[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)
-
-[📄 View Dashboard Diagram PDF](./AWS-CloudWatch-Dashboard.pdf)
-
-### 📊 **Observability Flow**
-Lambda Function → CloudWatch Logs → Metric Filter → CloudWatch Alarm → SNS Topic → Email
-       ↓                ↓                    ↓              ↓                    ↓
-   X-Ray Trace    Log Insights        Custom Metric    Dashboard Widget    PagerDuty
-
-**Core Rule:** `You can't fix what you can't see` → Logs + Metrics + Traces = Full Visibility
-
-### 🧩 **Components Breakdown**
-| Component | Name Used | Purpose | Best Practice | Boss Analogy |
-| --- | --- | --- | --- | --- |
-| **Log Groups** | `/aws/lambda/hello-world` | Store Lambda logs | 14-day retention | Filing cabinet sa logs |
-| **Metric Filter** | `ErrorCountFilter` | Extract metrics from logs | Filter "ERROR" only | Librarian na ga-count sa bad words |
-| **CloudWatch Alarm** | `LambdaHighErrorAlarm` | Auto-alert on threshold | 5 errors in 5min | Security alarm sa building |
-| **Dashboard** | `Lambda-Health` | Visual monitoring | 4 key widgets | CCTV monitor sa office |
-| **SNS Topic** | `lambda-alerts` | Send notifications | Subscribe email/Slack | Group chat sa team |
-| **X-Ray** | `Active Tracing` | Request flow map | Enable on Lambda | Google Maps sa request |
-
-### 🛠️ **6 Steps to Build**
-1. **Create Log Group** → `/aws/lambda/hello-world-lambda` + Retention 14 days
-2. **Enable X-Ray** → Lambda Configuration → Monitoring → Active tracing
-3. **Create Metric Filter** → Pattern: `ERROR` → Metric: `LambdaErrorCount` → Value: 1
-4. **Create Alarm** → Metric: `LambdaErrorCount` → Threshold: >5 for 1 datapoint → Action: SNS
-5. **Build Dashboard** → Add Widgets: Invocations, Errors, Duration P99, Throttles
-6. **Test & Validate** → Force Lambda error → Check Alarm fires → Receive email
-
-### 💡 **Key Observability Learnings**
-1. **Logs = Forensics** 🔍 Every Lambda run logged. Debug like detective
-2. **Metrics = Health** ❤️ Invocations, Errors, Duration = Vitals sa app
-3. **Alarms = Proactive** 🚨 Alert before customers complain = MTTD <2mins
-4. **Dashboards = Story** 📈 One glance = Know if system healthy or dying
-5. **Retention = Cost** 💰 Infinite logs = Infinite bill. Set 14 days
-6. **X-Ray = Map** 🗺️ See bottlenecks: Lambda slow or DynamoDB slow?
-
-**Golden Rule:** `Logs = What Happened` | `Metrics = How Much` | `Traces = Where Slow` | `Alarms = Wake Me Up`
-
-### 🎯 **Skills Demonstrated**
-`CloudWatch Logs` `Metric Filters` `CloudWatch Alarms` `SNS Notifications` `Dashboards` `X-Ray Tracing` `Log Insights` `Cost Optimization`
-
-### 🚀 **Next: CloudWatch Synthetics**
-Canary scripts to test API uptime every 5min from multiple regions
-
-### 📬 **Connect**
-https://linkedin.com/in/yourprofile  
-https://github.com/Ejay-cloud-CEC/aws-cloud101-projects
+-----------
+-----------
+# skksjs
