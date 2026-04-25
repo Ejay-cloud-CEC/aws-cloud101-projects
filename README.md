@@ -160,7 +160,6 @@ SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
 [[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)
 
 [📄 View Architecture Diagram PDF](./IAM%20ARCHITECTURE%20.pdf)
-
 ---
 
 ### 🧩 **Components Breakdown**
