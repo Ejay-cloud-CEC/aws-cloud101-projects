@@ -197,3 +197,43 @@ SQL skills for: Amazon RDS, Amazon Athena, Redshift, CloudWatch Logs Insights
        "Resource": "arn:aws:s3:::cloud101-bucket/*"
      }]
    }
+---
+---
+# ⚡ AWS Lambda Architecture 
+# Cloud 101
+# April 25 2026
+
+[[AWS](https://img.shields.io/badge/AWS-Lambda-FF9900?style=for-the-badge&logo=aws-lambda)](https://aws.amazon.com/lambda/) [[Serverless](https://img.shields.io/badge/Model-Serverless-00C851?style=for-the-badge)](./AWS-Lambda-Architecture.pdf) [[Status](https://img.shields.io/badge/Lab-Complete-00C851?style=for-the-badge)](#)  
+
+[📄 View Architecture Diagram PDF](./AWS-Lambda-Architecture.pdf)  
+
+### ⚡ **Architecture Flow**  
+Event Source [API Gateway/S3/EventBridge] → Lambda Function [hello-world-lambda] → Execution Role → CloudWatch Logs → Target Service [DynamoDB/S3/SNS]  
+↑ ↓  
+CloudWatch Events Dead Letter Queue  
+
+**Core Rule:** `Event-Driven` → No event = No cost = No server running  
+
+### 🧩 **Components Breakdown**  
+
+| Component | Name Used | Purpose | Best Practice | Boss Analogy |  
+| --- | --- | --- | --- | --- |  
+| **Event Source** | `API Gateway` | Triggers Lambda | Use REST API | Doorbell sa function |  
+| **Lambda Function** | `hello-world-lambda` | Runs code | Python 3.12 + 128MB | Smart microwave |  
+| **Execution Role** | `LambdaBasicExecutionRole` | IAM permissions | Least privilege | Worker ID badge |  
+| **CloudWatch Logs** | `/aws/lambda/hello-world` | Debug output | Check errors here | CCTV sa function |  
+| **Environment Vars** | `TABLE_NAME` | Config without code change | No hardcoded secrets | Settings panel |  
+| **Dead Letter Queue** | `lambda-dlq` | Failed events storage | SQS or SNS | Lost and found box |  
+
+### 🛠️ **6 Steps to Build**  
+1. **Create Lambda Function** → `hello-world-lambda` with Python 3.12 runtime + Author from scratch  
+2. **Set Execution Role** → `LambdaBasicExecutionRole` with `logs:CreateLogGroup` + `logs:PutLogEvents`  
+3. **Add Trigger** → API Gateway HTTP API + GET method + Open security  
+4. **Write Handler Code** → `def lambda_handler(event, context): return {'statusCode': 200, 'body': 'Hello from Lambda'}`  
+```python
+import json
+def lambda_handler(event, context):
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
