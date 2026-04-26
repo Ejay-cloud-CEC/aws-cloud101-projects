@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejay Ardimer | AWS Cloud101 Projects</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #0d1117; color: #c9d1d9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #0d1117; color: #c9d1d9; }
         h1 { color: #58a6ff; text-align: center; margin-bottom: 5px; }
         .subtitle { text-align:center; font-size:18px; color: #8b949e; margin-bottom: 30px; }
-        .project { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 15px 0; }
+        .project { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 15px 0; transition: border 0.2s; }
+        .project:hover { border: 1px solid #58a6ff; }
         .project h3 { color: #58a6ff; margin-top: 0; }
-        .project a { color: #58a6ff; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+        .project a { color: #58a6ff; text-decoration: none; font-weight: 600; }
         .project a:hover { text-decoration: underline; }
-        .tag { background: #238636; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; margin-right: 8px; }
-        footer { text-align: center; margin-top: 40px; color: #8b949e; border-top: 1px solid #30363d; padding-top: 20px; }
+        .tag { background: #238636; color: white; padding: 3px 10px; border-radius: 12px; font-size: 12px; margin-right: 8px; }
+        footer { text-align: center; margin-top: 50px; color: #8b949e; font-size: 14px; }
     </style>
 </head>
 <body>
@@ -22,49 +23,49 @@
     
     <div class="project">
         <h3><span class="tag">S3</span> S3 Static Website Hosting</h3>
-        <p>Deployed a static website using Amazon S3 bucket with public access and bucket policy configuration.</p>
-        <a href="./S3%20Static%20Website%20H..." target="_blank">View Architecture PDF →</a>
+        <p>Deployed a static website using Amazon S3 with bucket policy and public access configuration.</p>
+        <a href="./S3%20Static%20Website%20Hosting%20Architecture%20.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <div class="project">
         <h3><span class="tag">EC2</span> EC2 Architecture</h3>
-        <p>Launched and configured EC2 instances with security groups, key pairs, and user data scripts.</p>
-        <a href="./EC2%20Architecture.pdf" target="_blank">View Architecture PDF →</a>
+        <p>Launched EC2 instances with security groups, key pairs, and automated user data scripts.</p>
+        <a href="./EC2%20Architecture.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <div class="project">
         <h3><span class="tag">VPC</span> AWS VPC Architecture</h3>
-        <p>Built custom VPC with public/private subnets, Internet Gateway, NAT Gateway, and route tables.</p>
-        <a href="./AWS%20VPC%20Architect..." target="_blank">View Architecture PDF →</a>
+        <p>Built custom VPC with public/private subnets, IGW, NAT Gateway, and route tables.</p>
+        <a href="./AWS%20VPC%20Architecture%20.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <div class="project">
         <h3><span class="tag">IAM</span> IAM Architecture</h3>
         <p>Implemented least-privilege access using IAM users, groups, roles, and custom policies.</p>
-        <a href="./IAM%20ARCHITECTUR..." target="_blank">View Architecture PDF →</a>
+        <a href="./IAM%20ARCHITECTURE%20.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <div class="project">
         <h3><span class="tag">RDS</span> AWS RDS MySQL</h3>
-        <p>Deployed Multi-AZ RDS MySQL instance with security groups and backup configuration.</p>
-        <a href="./AWS%20RDS%20MySQL%20A..." target="_blank">View Architecture PDF →</a>
+        <p>Deployed Multi-AZ RDS MySQL instance with automated backups and security groups.</p>
+        <a href="./AWS%20RDS%20MySQL%20Architecture%20.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <div class="project">
         <h3><span class="tag">Lambda</span> AWS Lambda Architecture</h3>
-        <p>Serverless function with API Gateway trigger and DynamoDB integration.</p>
-        <a href="./AWS%20LAMBDA%20ARC..." target="_blank">View Architecture PDF →</a>
+        <p>Serverless function triggered by API Gateway with DynamoDB integration.</p>
+        <a href="./AWS%20LAMBDA%20ARCHITECTURE%20.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <div class="project">
         <h3><span class="tag">CloudWatch</span> AWS CloudWatch</h3>
-        <p>Monitoring setup with custom metrics, alarms, and dashboard visualization.</p>
-        <a href="./Aws%20CloudWatch%20A..." target="_blank">View Architecture PDF →</a>
+        <p>Monitoring setup with custom metrics, alarms, and real-time dashboard visualization.</p>
+        <a href="./Aws%20CloudWatch%20Architecture%20.pdf" target="_blank">View PDF Diagram →</a>
     </div>
 
     <footer>
         <p><strong>Ejay-cloud-CEC</strong> | AWS Cloud Practitioner Journey 2026</p>
-        <p>GitHub: @ejay-cloud-cec | Cebu City, Philippines</p>
+        <p>GitHub: @ejay-cloud-cec | Cebu City, Philippines 🇵🇭</p>
     </footer>
 </body>
 </html>
