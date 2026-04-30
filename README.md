@@ -285,8 +285,11 @@ https://github.com/Ejay-cloud-CEC/aws-cloud101-projects
 **Platform:** Killercoda Ubuntu Playground
 
 ## Screenshots
-1. **Curl Validation:** `IMG_20260430_132502.jpg` - HTTP 200 OK Response
-2. **Service Status:** `IMG_20260430_132552.jpg` - Active Running
+1. **Curl Validation: HTTP 200 OK**  
+![Curl Test](IMG_20260430_132502.jpg)
+
+2. **Service Status: Active Running**  
+![Nginx Status](IMG_20260430_132552.jpg)
 
 ## Commands Used
 ```bash
