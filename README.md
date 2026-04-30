@@ -278,3 +278,20 @@ Canary scripts to test API uptime every 5min from multiple regions
 https://linkedin.com/in/yourprofile  
 https://github.com/Ejay-cloud-CEC/aws-cloud101-projects
 
+---
+# Lab 21: Nginx Web Server Deployment
+**Cloud Computing Subject**  
+**Date:** April 30, 2026  
+**Platform:** Killercoda Ubuntu Playground
+
+## Screenshots
+1. **Curl Validation:** `IMG_20260430_132502.jpg` - HTTP 200 OK Response
+2. **Service Status:** `IMG_20260430_132552.jpg` - Active Running
+
+## Commands Used
+```bash
+apt update -y
+apt install nginx -y
+service nginx start
+curl localhost
+service nginx status
